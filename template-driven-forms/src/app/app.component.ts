@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'template-driven-forms';
+  topics = ['Angular', 'React', 'Vue'];
 }
