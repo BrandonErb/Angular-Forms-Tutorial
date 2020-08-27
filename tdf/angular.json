@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "template-driven-forms": {
+    "tdf": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/template-driven-forms",
+            "outputPath": "dist/tdf",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "template-driven-forms:build"
+            "browserTarget": "tdf:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "template-driven-forms:build:production"
+              "browserTarget": "tdf:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "template-driven-forms:build"
+            "browserTarget": "tdf:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "template-driven-forms:serve"
+            "devServerTarget": "tdf:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "template-driven-forms:serve:production"
+              "devServerTarget": "tdf:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "template-driven-forms"
+  "defaultProject": "tdf"
 }
